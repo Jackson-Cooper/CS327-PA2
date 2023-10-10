@@ -96,7 +96,7 @@ public class CooperJacksonHarmonCameronReal {
 
         System.out.printf("RSA Decryptions took %l milliseconds", elapsedTime);
         System.out.println();
-        System.out.printf("RSA Decryptions in terms of kilobits/second ", kbps);
+        System.out.printf("RSA Decryptions in terms of kilobits/second %l", kbps);
         System.out.println();
         System.out.printf("This speed is %l gigabit/second Internet speed", kbps / 1000);
 
