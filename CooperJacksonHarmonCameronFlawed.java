@@ -1,4 +1,6 @@
 import java.math.BigInteger;
+// 2.2 Flawed Example
+// by: Jackson Cooper, Cameron Harmon
 
 public class CooperJacksonHarmonCameronFlawed {
     public static void main(String[] args) {
