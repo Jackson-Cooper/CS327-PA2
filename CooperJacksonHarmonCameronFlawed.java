@@ -33,8 +33,8 @@ public class CooperJacksonHarmonCameronFlawed {
         
         // Print the result
         System.out.println("Number of bits in N: " + bitLength);
-        System.out.println("p = " + p);
-        System.out.println("q = " + q);
+        System.out.println("p: " + p);
+        System.out.println("q: " + q);
         System.out.println("Private key d: " + d);
         System.out.println("Ciphertext: " + ciphertext);
         System.out.println("Plaintext: " + plaintext);
