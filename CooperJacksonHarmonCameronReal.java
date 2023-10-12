@@ -96,6 +96,5 @@ public class CooperJacksonHarmonCameronReal {
         System.out.println();
         System.out.printf("The internet speed is %e gigabit/second", gbps);
         System.out.println();
-
     }
 }
