@@ -54,14 +54,14 @@ public class CooperJacksonHarmonCameronReal {
         BigInteger plaintext = ciphertext.modPow(d, N);
         
         // Print the result
-        System.out.println("p = " + p.toString(16));
-        System.out.println("q = " + q.toString(16));
-        System.out.println("N = " + N.toString(16));
+        System.out.println("p: " + p.toString(16));
+        System.out.println("q: " + q.toString(16));
+        System.out.println("N: " + N.toString(16));
         System.out.println("Bit-length of N = " + Integer.toString(bitLength, 16));
-        System.out.println("e = " + e.toString(16));
-        System.out.println("d = " + d.toString(16));
-        System.out.println("c = " + ciphertext.toString(16));
-        System.out.println("m2 = " + plaintext);
+        System.out.println("e: " + e.toString(16));
+        System.out.println("d: " + d.toString(16));
+        System.out.println("c: " + ciphertext.toString(16));
+        System.out.println("m2: " + plaintext);
 
         return arr;
     }
@@ -70,8 +70,6 @@ public class CooperJacksonHarmonCameronReal {
         // decrypt ciphertext
         ciphertext.modPow(d, N);
     }
-
-    
     
     public static void main(String[] args) {
         BigInteger[] dN = encryptWithPrint();
@@ -96,7 +94,7 @@ public class CooperJacksonHarmonCameronReal {
         System.out.println();
         System.out.printf("RSA Decryptions took %.3f kilobits/second ", kbps);
         System.out.println();
-        System.out.printf("This speed is %e gigabit/second Internet speed", gbps);
+        System.out.printf("The internet speed is %e gigabit/second", gbps);
         System.out.println();
 
     }
