@@ -32,11 +32,12 @@ public class CooperJacksonHarmonCameronFlawed {
         BigInteger plaintext = ciphertext.modPow(d, N);
         
         // Print the result
-        System.out.println("Number of bits in N: " + bitLength);
-        System.out.println("p: " + p);
-        System.out.println("q: " + q);
-        System.out.println("Private key d: " + d);
-        System.out.println("Ciphertext: " + ciphertext);
-        System.out.println("Plaintext: " + plaintext);
+        System.out.println("N: " + N.toString(16));
+        System.out.println("p: " + p.toString(16));
+        System.out.println("q: " + q.toString(16));
+        System.out.println("Bit-length of N: " + Integer.toString(bitLength, 16));
+        System.out.println("d = e^-1 mod z = " + d.toString(16));
+        System.out.println("c = m^e mod N = " + ciphertext.toString(16));
+        System.out.println("m2 = c^d mod N = " + plaintext);
     }
 }
